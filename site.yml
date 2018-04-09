@@ -1,0 +1,21 @@
+---
+- name: install and start apache
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: install apache
+    apt: name=apache2 state=present
+
+  - name: start apache
+    service: name=apache2 state=started enabled=yes	
+
+  - name: install php
+    apt: name=php state=present
+
+  - name: install library of apache for php
+    apt: name=libapache2-mod-php state=present
+
+  - name: install my sql
+    apt: name=mysql-server state=present
+
