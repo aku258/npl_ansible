@@ -20,7 +20,7 @@
 #139.59.33.235 
 
 [hosts]
-139.59.42.136 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=akash2582
+139.59.42.136 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=*********
 
 # Ex 2: A collection of hosts belonging to the 'webservers' group
 
